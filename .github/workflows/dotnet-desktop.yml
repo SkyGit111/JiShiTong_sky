@@ -1,0 +1,48 @@
+name: .NET Backend Test
+
+on:
+  push:
+    branches: [ "main", "main-backend" ]
+  pull_request:
+    branches: [ "main", "main-backend" ]
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+
+    env:
+      Solution_Name: backend-program/JishitongBackend/JishitongBackend.sln
+      Wap_Project_Path: backend-program/JishitongBackend
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Restore the application
+      run: dotnet restore ${{ env.Solution_Name }}
+
+    - name: Build
+      run: dotnet build ${{ env.Solution_Name }}
+
+    - name: Execute unit tests
+      run: dotnet test ${{ env.Solution_Name }}
+
+    - name: Create the app package
+      run: msbuild $env:Wap_Project_Path /p:Configuration=Debug /p:UapAppxPackageBuildMode=StoreUpload
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: MSIX Package
+        path: ${{ env.Wap_Project_Directory }}\AppPackages
