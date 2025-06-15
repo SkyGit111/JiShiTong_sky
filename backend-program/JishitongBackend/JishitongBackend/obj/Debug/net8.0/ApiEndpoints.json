@@ -1,0 +1,591 @@
+[
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "PostGroupOrderCreateWell",
+    "RelativePath": "v1/groupOrder/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestJson",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "PostGroupOrderCreate",
+    "RelativePath": "v1/groupOrder/createRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "groupOrder",
+        "Type": "JishitongBackend.Models.GroupOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "DeleteGroupOrder",
+    "RelativePath": "v1/groupOrder/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetAll",
+    "RelativePath": "v1/groupOrder/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetAllActivity",
+    "RelativePath": "v1/groupOrder/getAllActivity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetAllProduct",
+    "RelativePath": "v1/groupOrder/getAllProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetAllTraffic",
+    "RelativePath": "v1/groupOrder/getAllTraffic",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderInformationController",
+    "RelativePath": "v1/groupOrder/getinformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetMine",
+    "RelativePath": "v1/groupOrder/getMine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetMultipleGroupOrderInformationController",
+    "RelativePath": "v1/groupOrder/getmultipleinformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetMyCreate",
+    "RelativePath": "v1/groupOrder/getMyCreate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetMyParticipate",
+    "RelativePath": "v1/groupOrder/getMyParticipate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetOpen",
+    "RelativePath": "v1/groupOrder/getOpen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetOpenActivity",
+    "RelativePath": "v1/groupOrder/getOpenActivity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetOpenProduct",
+    "RelativePath": "v1/groupOrder/getOpenProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "GetGroupOrderGetOpenTraffic",
+    "RelativePath": "v1/groupOrder/getOpenTraffic",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "PostGroupOrderModifyWell",
+    "RelativePath": "v1/groupOrder/modify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "modifyRequest",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "PostGroupOrderModify",
+    "RelativePath": "v1/groupOrder/modifyRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "modifyRequest",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "PostGroupOrderParticipate",
+    "RelativePath": "v1/groupOrder/participate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "PostGroupOrderQuit",
+    "RelativePath": "v1/groupOrder/quit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.GroupOrderController",
+    "Method": "VoiceCreateGroupOrder",
+    "RelativePath": "v1/groupOrder/voiceCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "voiceRequest",
+        "Type": "JishitongBackend.Controllers.GroupOrderController\u002BVoiceCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.MessageController",
+    "Method": "DeleteMessage",
+    "RelativePath": "v1/message/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.MessageController",
+    "Method": "GetMessageInformationController",
+    "RelativePath": "v1/message/getInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.UserController",
+    "Method": "GetTokenCheck",
+    "RelativePath": "v1/user/check",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "v1/user/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.UserController",
+    "Method": "GetUserInformationController",
+    "RelativePath": "v1/user/getinformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.UserController",
+    "Method": "PostUserLogin",
+    "RelativePath": "v1/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login_request",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.UserController",
+    "Method": "PostUserModify",
+    "RelativePath": "v1/user/modify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "modify_request",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JishitongBackend.Controllers.UserController",
+    "Method": "PostUserAdd",
+    "RelativePath": "v1/user/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "JishitongBackend.Models.User",
+        "IsRequired": true
+      },
+      {
+        "Name": "org_pass",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
